@@ -79,11 +79,9 @@ resetNearestValues
 
 
 2. RRT with Next Best View Planner
-This approach is inspired from this research paper by ETH Zurich. Receding Horizon "Next-Best-View" Planner for 3D Exploration.
-Cited-
-A. Bircher, M. Kamel, K. Alexis, H. Oleynikova and R. Siegwart, "Receding Horizon "Next-Best-View" Planner for 3D Exploration," 2016 IEEE International Conference on Robotics and Automation (ICRA), Stockholm, Sweden, 2016, pp. 1462-1468, doi: 10.1109/ICRA.2016.7487281.
-keywords: {Vehicles;Robot sensing systems;Space exploration;Planning;Navigation;Three-dimensional displays}, 
 
+The proposed planner employs a receding horizon “next-best-view” scheme: In an online computed random tree it finds the best branch, the quality of which is determined by the amount of unmapped space that can be explored. Only the first edge of this branch is executed at every planning step, while repetition of this procedure leads to complete exploration results. The proposed planner is capable of running online, onboard a robot with limited resources
+   
 Working and Results- 
 New RRT-NBV Class
 
